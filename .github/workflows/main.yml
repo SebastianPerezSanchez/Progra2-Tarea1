@@ -11,12 +11,16 @@ on:
     branches: [ main ]
 
   # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
+  name: Java CI with Maven Deploy to heroku
 
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
 jobs:
-  # This workflow contains a single job called "build"
- build_webapp:
+  build_webapp:
     runs-on: ubuntu-latest
     steps:
 
