@@ -28,7 +28,7 @@ jobs:
       with:
 
 
-          heroku_email: ${{ secrets.HEROKU_EMAIL }}
+          email: ${{ secrets.EMAIL }}
 
           heroku_api_key: ${{ secrets.HEROKU_API_KEY }}
           
